@@ -78,14 +78,7 @@ Models are downloaded **offline** to ensure reproducibility.
 
 $$
 \mathcal{L}
-= \underbrace{\|x - \hat{x}\|^2}_{\text{Reconstruction}}
-+ \beta \cdot
-\underbrace{
-\left(
--\frac{1}{2} \sum_{j=1}^{d}
-\left(1 + \log \sigma_j^2 - \mu_j^2 - \sigma_j^2\right)
-\right)
-}_{\text{KL Divergence}}
+= \underbrace{\|x - \hat{x}\|^2}_{\text{Reconstruction}} + \beta \cdot \underbrace{ \left( -\frac{1}{2} \sum_{j=1}^{d} \left(1 + \log \sigma_j^2 - \mu_j^2 - \sigma_j^2\right) \right) }_{\text{KL Divergence}}
 $$
 
 #### MIG Evaluation Function
@@ -93,7 +86,7 @@ $$
 Disentanglement is evaluated using the preserved ratio of **Mutual Information Gap (MIG)**.
 
 $$
-\text{ratio of MIG} = \frac{I(z^{(j^*)}; v) - I(z^{(j^{**})}; v)}{I(z^{(j^*)}; v)}
+ratio of MIG = \frac{I(z^{(j^*)}; v) - I(z^{(j^{**})}; v)}{I(z^{(j^*)}; v)}
 $$
 
 ---
@@ -137,7 +130,6 @@ $$
 D = \frac{MI(z_p, y_p) - MI(z_p, y_t)}{MI(z_p, y_p)} + \frac{MI(z_t, y_t) - MI(z_t, y_p)}{MI(z_t, y_t)}
 $$
 
-$$\left( \sum{k=1}^n a_k b_k \right)^2 \leq \left( \sum{k=1}^n ak^2 \right) \left( \sum{k=1}^n b_k^2 \right)$$
 
 ### Disentanglement Performance
 
