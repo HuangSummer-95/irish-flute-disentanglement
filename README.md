@@ -84,9 +84,9 @@ $$
 #### MIG Evaluation Function
 
 Disentanglement is evaluated using the preserved ratio of **Mutual Information Gap (MIG)**.
-
 $$
-ratio of MIG = \frac{I(z^{(j^*)}; v) - I(z^{(j^{**})}; v)}{I(z^{(j^*)}; v)}
+\text{ratio of MIG} =
+\frac{I(z^{(j^{*})}; v) - I(z^{(j^{**})}; v)}{I(z^{(j^{*})}; v)}
 $$
 
 ---
@@ -155,8 +155,6 @@ $$
 This confirms **practical disentanglement**, even under factor coupling.
 
 ---
-
-## 🚀 Project Structure
 
 ## 🚀 Getting Started
 
