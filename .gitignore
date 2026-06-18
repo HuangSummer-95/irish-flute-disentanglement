@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+dist/
+build/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# HuggingFace cache
+~/.cache/huggingface/
+models/clap_offline/
+models/wav2vec2-base-960h_offline/
+clap_offline/
+wav2vec2-base-960h_offline/
+
+# OS
+Thumbs.db
+Desktop.ini
+
+# IDE
+.vscode/
+.idea/
