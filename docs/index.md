@@ -1,4 +1,7 @@
 ---
+mathjax: true
+---
+---
 layout: default
 title: "Irish Flute Style Disentanglement – Math"
 ---
