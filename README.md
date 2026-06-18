@@ -137,6 +137,8 @@ $$
 D = \frac{MI(z_p, y_p) - MI(z_p, y_t)}{MI(z_p, y_p)} + \frac{MI(z_t, y_t) - MI(z_t, y_p)}{MI(z_t, y_t)}
 $$
 
+$$\left( \sum{k=1}^n a_k b_k \right)^2 \leq \left( \sum{k=1}^n ak^2 \right) \left( \sum{k=1}^n b_k^2 \right)$$
+
 ### Disentanglement Performance
 
 | Metric | Before Adversarial | After Adversarial |
