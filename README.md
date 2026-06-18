@@ -27,6 +27,7 @@ Two strategies are compared:
 
 ## 📌 Project Structure
 
+<pre>
 ├── audio/
 ├── data/
 │ └── ITM-Flute-Style6/
@@ -36,6 +37,7 @@ Two strategies are compared:
 ├── environment.yml
 ├── requirements.txt
 └── README.md
+</pre>
 
 ⚠️ **Note**: Full dataset applied in this project is ITM-Flute-Style6, but 10 samples can be used in preliminary testing are stored in /audio
 
@@ -86,7 +88,7 @@ $$
 Disentanglement is evaluated using the preserved ratio of **Mutual Information Gap (MIG)**.
 
 $$
-\text{ratio of MIG} = \frac{I(z^{(j^*)}; v) - I(z^{(j^{**})}; v)}{I(z^{(j^*)}; v)}
+\text{ratio of MIG} = \frac{I(z^{(j^{*})}; v) - I(z^{(j^{**})}; v)}{I(z^{(j^{*})}; v)}
 $$
 
 ---
@@ -94,9 +96,12 @@ $$
 ### 3️⃣ Explicit Disentanglement (Proposed)
 
 We propose a **dual-branch disentangled β-VAE**:
+
+<pre>
 Audio → Shared Encoder →
                         ├─ z_player (style)
                         └─ z_tune (content)
+</pre>
 
 #### Loss Components
 - ✅ Classification loss (Player / Tune)
