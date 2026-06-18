@@ -86,8 +86,7 @@ $$
 Disentanglement is evaluated using the preserved ratio of **Mutual Information Gap (MIG)**.
 
 $$
-\text{ratio of MIG} =
-\frac{I(z^{(j^{*})}; v) - I(z^{(j^{**})}; v)}{I(z^{(j^{*})}; v)}
+\text{ratio of MIG} = \frac{I(z^{(j^*)}; v) - I(z^{(j^{**})}; v)}{I(z^{(j^*)}; v)}
 $$
 
 ---
