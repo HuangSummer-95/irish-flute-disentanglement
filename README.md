@@ -142,12 +142,12 @@ $$
 |----|----|----|
 | Player MIG | ~0.29 | — |
 | Tune MIG | ~0.11 | — |
-| Player Leakage | — | ~0.0674 |
-| Tune Leakage | — | ~0.0005 |
+| Player Leakage | — | ~0.0409 |
+| Tune Leakage | — | ~0.0127 |
 | Disentanglement Score | - | ~**1.92** |
 | CE Loss for Classification | ~0.09 | ~0.180 |
 
-✅ Leakage is suppressed **below 0.1**  
+✅ Leakage is suppressed **below 0.05**  
 ✅ Latent spaces remain highly discriminative  
 
 ---
